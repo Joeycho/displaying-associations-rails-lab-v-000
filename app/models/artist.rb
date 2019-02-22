@@ -2,7 +2,7 @@ class Artist < ActiveRecord::Base
   has_many :songs
 
   private
- 
+
   def song_count
     if !self.songs.empty?
       self.songs.count
@@ -10,5 +10,5 @@ class Artist < ActiveRecord::Base
       0
     end
   end
- 
+
 end
