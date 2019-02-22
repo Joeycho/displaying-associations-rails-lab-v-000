@@ -10,6 +10,7 @@ RSpec.describe Artist, type: :model do
   end
 
   it "counts the songs" do
+    binding.pry
     expect(@artist.song_count).to eq(2)
   end
 end
