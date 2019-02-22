@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'pry'
 RSpec.describe Artist, type: :model do
   before do
     Artist.destroy_all
@@ -10,7 +9,6 @@ RSpec.describe Artist, type: :model do
   end
 
   it "counts the songs" do
-    binding.pry
     expect(@artist.song_count).to eq(2)
   end
 end
