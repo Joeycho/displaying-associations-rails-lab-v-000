@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+require 'pry'
 RSpec.describe Artist, type: :model do
   before do
     Artist.destroy_all
