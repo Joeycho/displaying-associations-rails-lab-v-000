@@ -3,7 +3,7 @@ class Artist < ActiveRecord::Base
 
 
   private
-  
+
   def song_count
     if !self.songs.empty?
       self.songs.count
